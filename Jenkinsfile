@@ -62,7 +62,7 @@ pipeline {
                 script {
                     sleep (time: 5)
                     def response = httpRequest (
-                        # Add $KUBE_MASTER_IP to global env in Jenkins for avoiding hardcode
+                        // Add $KUBE_MASTER_IP to global env in Jenkins for avoiding hardcode
                         url: "http://34.231.241.171:8081/",
                         timeout: 30
                     )
